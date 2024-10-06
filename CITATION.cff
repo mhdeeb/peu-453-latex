@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: PEU-453 Assignments
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mohamed
+    family-names: El-Deeb
+    email: s-mohamed.eldeeb@zewailcity.edu.eg
+repository-code: "https://github.com/mhdeeb/peu-453-latex"
+abstract: >-
+  Solutions for PEU-453 Assignments
+license: MIT
