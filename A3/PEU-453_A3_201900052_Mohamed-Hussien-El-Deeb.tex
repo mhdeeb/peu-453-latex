@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage[svgnames,x11names,table]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[thicklines]{cancel}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=RoyalBlue4,
+    urlcolor=RoyalBlue4,
+}
+
+\title{PEU 453 Assignment 3}
+\author{Mohamed Hussien El-Deeb (201900052)}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Problem 3.1}
+
+
+\begin{enumerate}[label=\alph*.]
+      \item
+            \[x(\tau) = \frac{1}{g}[\cosh(g\tau)-1]\]
+            \[\frac{d x(\tau)}{d\tau} = \sinh(g\tau)\]
+      \item
+            \[u^x = \frac{d x(\tau)}{d\tau} = \sinh(g\tau)\]
+            \[u.u = {(u^x)}^2-{(u^t)}^2 = -1\]
+            \[\sinh^2(g\tau) - {(u^t)}^2 = -1\]
+            \[ u^t = \sqrt{1 + \sinh^2(g\tau)} = \cosh(g\tau)\]
+      \item
+            \[v_x=\frac{u^x}{u^t}\]
+            \[v_x=\frac{\sinh(g\tau)}{\cosh(g\tau)} = \tanh(g\tau)\]
+            where tanh does not exceed one 1.
+      \item
+            \[u^t = \frac{dt}{d\tau}\]
+            \[\int_0^t dt = \int_0^\tau u^t(\tau) d\tau \]
+            \[t = \int_0^\tau \cosh(g\tau) d\tau \]
+            \[t = \frac{1}{g} \sinh(g\tau)\]
+            \[gt = \sinh(g\tau)\]
+      \item
+            \[u^x = \sinh(g\tau) = gt\]
+            \[u^t = \cosh(g\tau) = \sqrt{1+{\sinh(g\tau)}^2} = \sqrt{1+{(gt)}^2}\]
+            \[v_x = \tanh(g\tau) = \frac{gt}{\sqrt{1+{(gt)}^2}}\]
+\end{enumerate}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{references}
+\nocite{El-Deeb_PEU-453_Assignments}
+
+\end{document}
