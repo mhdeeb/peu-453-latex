@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[svgnames,x11names,table]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[thicklines]{cancel}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=RoyalBlue4,
+    urlcolor=RoyalBlue4,
+}
+
+\title{PEU 453 Assignment 5}
+\author{Mohamed Hussien El-Deeb (201900052)}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\renewcommand{\labelenumi}{\textbf{\alph{enumi}.}}
+
+\newpage
+
+\section{Problem 5.3}
+
+ (Do problem 5.1 first.) Consider the coordinate basis discussed in box 5.1 for polar coordinates \(r, \theta \).
+
+\begin{enumerate}
+      \item Consider an object moving at a constant speed \(v\) in the \(+y\) direction of the cartesian coordinate system, so that \(v^y=v, v^z=0\). Find the components \(v^r\) and \(v^\theta \) of this object's velocity in the polar coordinate system. Express your results both purely in terms of \(r\) and \(\theta \) and purely in terms of \(x\) and \(y\).
+      \item Imagine that the object starts at \(x=b, y=0\) at time \(t=0\). Its subsequent \(y\) position at later times \(t\) will therefore be simply \(y=v t\). Use this to express both the object's \(r\) and \(\theta \) position and its polar coordinate velocity components \(v\) and \(v^\beta \) at all times \(t>0\) in terms of \(v\), \(b, r\), and \(t\). Does your result make sense? (In particular, if you sketch the object's path, you should be able to see that its velocity will be mostly in the \(\theta \) direction at early times, but mostly in the \(r\) direction at late times. Is this consistent with your mathematical expressions?)
+\end{enumerate}
+
+\newpage
+
+\section{Problem 5.5}
+
+We can define ``sinusoidal'' coordinates \(u, w\) on a flat 2D plane by the relations \(u=x\) and \(w=y-A \sin (b x)\), where \(A\) and \(b\) are constants. For the sake of concreteness, let \(A=1.0 \mathrm{~cm}\) and \(b=\pi / 2 \mathrm{~cm}^{-1}\).
+
+\begin{enumerate}
+      \item Sketch what the ``curves'' of constant \(u\) and constant \(w\) look like in a cartesian \(x, y\) coordinate system.
+      \item What is the metric of the sinusoidal coordinate system? Is this metric diagonal?
+      \item Imagine that an object moves with constant velocity \(\boldsymbol{v}\) such that \(v^x=v\) and \(v^y=0\). Such an object's position will be \(x=v t\) (assuming \(x=0\) at \(t=0\)) and \(y=\) constant. Find the object's velocity components \(v^\mu \) and \(v^{\prime \prime}\) in the \(u, w\) coordinate system. Express your results in terms of \(v, t, A\), and \(b\).
+      \item Show that the squared magnitude of \(\boldsymbol{v}\) is still the constant \(v^2\) in this coordinate system, even though the velocity component \(V^{\prime \prime}\) is not constant in time. Explain why \(V^*\) is not constant, even though the vector \(v\) in abstract always points in the same direction and always has the same magnitude.
+      \item Argue therefore that \(d v^w / d t\) cannot be equal to the component \(a^*\) of the object's acceleration vector \(\boldsymbol{a}\) in the \(u\), \(w\) coordinate system. (Hint: Note that \(a^*=a^y=0\) in the cartesian system.) We will learn in a later chapter how to take derivatives correctly in an curvilinear coordinate system.
+\end{enumerate}
+
+\newpage
+
+\section{Problem 5.7}
+
+Consider the two-dimensional surface of a paraboloid defined by the relation \(z=b r^2\) (where \(b\) is some constant and \(r^2=x^2+y^2\)) in a 3D flat (Euclidean) space.
+
+\begin{enumerate}
+      \item Sketch this surface in a 3D \(x y z\) plot.
+      \item Define coordinates \(r, \phi \) for this surface, where the \(r\) coordinate of a point on the surface is defined as above and \(\phi \) is an angle measured around the surface's axis of symmetry (the \(z\) axis), like a longitudinal coordinate on the earth. Determine the metric components \(g_{\mu v}\) for these coordinates on the paraboloid's surface, assuming that we use a coordinate basis. (Hint: Note that a step toward larger \(r\) on the surface means not only moving away from the \(z\) axis in the 3D space but also moving upward to more positive z. What is the distance \(d s\) along the surface involved in a step of \(d r\) along a curve of constant \(\phi \))? 
+\end{enumerate}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{references}
+\nocite{El-Deeb_PEU-453_Assignments}
+
+\end{document}
